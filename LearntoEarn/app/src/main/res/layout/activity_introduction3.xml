@@ -53,6 +53,13 @@
         android:background="#C4C4C4"
         android:layout_toEndOf="@+id/fourth"
         android:layout_alignTop="@+id/fourth"/>
+    <View
+        android:id="@+id/six"
+        android:layout_width="32dp"
+        android:layout_height="14dp"
+        android:background="#C4C4C4"
+        android:layout_toEndOf="@+id/fifth"
+        android:layout_alignTop="@+id/fourth"/>
     <TextView
         android:id="@+id/question"
         android:layout_width="wrap_content"

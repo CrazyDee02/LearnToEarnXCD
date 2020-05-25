@@ -95,7 +95,7 @@ public class introduction extends AppCompatActivity {
             }
         });
         progress3 = findViewById(R.id.progress2);
-        progress3.setText("("+Integer.toString(startCount2)+"/x)");
+        progress3.setText("("+Integer.toString(startCount2)+"/6)");
 
 
 
