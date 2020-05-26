@@ -54,15 +54,7 @@ public class introduction extends AppCompatActivity {
         startCount1 = s1.getInt("progress1",0);
         startCount2 = s1.getInt("progress2",0);
         thermsProgress.setText("("+Integer.toString(startCount1)+ "/4)");
-        if (startCount<5){
-            thermsBtn.setEnabled(false);
-            thermsText.setTextColor(Color.GRAY);
-            thermsProgress.setTextColor(Color.GRAY);
 
-
-        }
-        else {
-            thermsBtn.setEnabled(true);
             thermsText.setTextColor(Color.BLACK);
             thermsProgress.setTextColor(Color.BLACK);
             thermsBtn.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +64,7 @@ public class introduction extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-        }
+
 
         startText = findViewById(R.id.progress);
         startText.setText("("+Integer.toString(startCount) + "/5)");
@@ -96,6 +88,19 @@ public class introduction extends AppCompatActivity {
         });
         progress3 = findViewById(R.id.progress2);
         progress3.setText("("+Integer.toString(startCount2)+"/6)");
+        if(startCount<5){
+            thermsBtn.setEnabled(false);
+            thermsText.setTextColor(Color.GRAY);
+            thermsProgress.setTextColor(Color.GRAY);
+            thirdPar.setEnabled(false);
+            thirdText.setTextColor(Color.GRAY);
+            progress3.setTextColor(Color.GRAY);
+        }
+        if (startCount1<4){
+            thirdPar.setEnabled(false);
+            thirdText.setTextColor(Color.GRAY);
+            progress3.setTextColor(Color.GRAY);
+        }
 
 
 

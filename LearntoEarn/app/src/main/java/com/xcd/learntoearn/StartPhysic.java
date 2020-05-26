@@ -40,7 +40,7 @@ public class StartPhysic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startphysic);
-        s1 = getSharedPreferences("Storage", MODE_PRIVATE);
+        s1 = getSharedPreferences("Storage", MODE_PRIVATE); //Создаём хранилище
         s1.getInt("progress",MODE_PRIVATE);
         returnBtn = findViewById(R.id.returnbtn);
         homeBtn = findViewById(R.id.homebtn);
